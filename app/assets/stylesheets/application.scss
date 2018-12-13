@@ -1,6 +1,18 @@
 
 @import "bootstrap/bootstrap.min.css";
 
+html
+{
+  margin: 0;
+  padding: 0;
+}
+
+body
+{
+  margin: 0;
+  padding: 0;
+}
+
 .reducing-name
 {
   font-style: italic;
@@ -155,4 +167,127 @@
   text-align-last: center;
   margin: 0 12px;
   line-height: 17px;
+}
+
+.without-margin
+{
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.margin-problem
+{
+  margin: 0 0 100px 0;
+}
+
+section#services
+{
+  padding-bottom: 30px;
+  padding-top: 100px;
+}
+
+.without-margin-all
+{
+  margin: 100px 0 0 0;
+  padding: 0;
+}
+
+.figures-adjustment
+{
+  font-size: 1.4em;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.margin-figures
+{
+  padding: 20px 0px;
+}
+
+.reduced-figures
+{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.6em;
+  color: rgb(233, 98, 46);
+}
+
+@media screen and (max-width: 710px) and (min-width: 520px)
+{
+
+  .figures-adjustment
+  {
+    font-size: 1em;
+  }
+
+  .reduced-figures
+  {
+    font-size: 0.6em;
+  }
+
+}
+
+
+@media screen and (max-width: 520px)
+{
+
+  .without-margin-all
+  {
+    display: none;
+  }
+
+  .no-margin-3
+  {
+    margin: 0;
+    padding: 80px 5px;
+  }
+
+  .no-margin-4
+  {
+    margin: 20px;
+    padding: 25px 5px;
+  }
+
+}
+
+
+
+
+.no-margin-2
+{
+  margin: 0;
+  padding: 20px 0;
+}
+
+.no-margin-3
+{
+  margin: 0;
+  padding: 80px 20px;
+}
+
+.no-margin-4
+{
+  margin: 20px;
+  padding: 25px 20px;
+}
+
+.aligning-items
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-aligned-2
+{
+  text-align: center;
+}
+
+section.contract
+{
+  margin-bottom: 120px;
 }
