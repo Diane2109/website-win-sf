@@ -291,3 +291,23 @@ section.contract
 {
   margin-bottom: 120px;
 }
+
+section#portfolio
+{
+  margin-bottom: 100px;
+}
+
+.logo-winnovation
+{
+  height: 150px;
+  margin-top: 100px;
+  text-align: center;
+}
+
+section#contact
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+}
