@@ -7,6 +7,14 @@
     <meta name="description" content="Winnovation is the US subsidiary of Bouygues Group, a worldwide diversified industrial group based in France and organised around 3 sectors of activity: construction, telecoms and medias.">
     <meta name="author" content="Winnovation Bouygues US">
     <link rel="icon" type="image/png" href="assets/byUS_carre.png" />
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    "/assets/bootstrap/bootstrap.min.css" %>
+    <%= javascript_include_tag "/assets/bootstrap_js/bootstrap.min.js" %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
     <title>Bouygues US - Winnovation</title>
 
 
@@ -55,6 +63,9 @@
                 <li class="nav-item">
                   <a class="nav-link js-scroll-trigger" href="#contact">Contact us</a>
                 </li>
+                <% if logged_in? %>
+                <li><%= link_to "Se déconnecter", logout_path, method: :delete, class: "btn btn-xs btn-danger" %></li>
+                <% end %>
               </ul>
             </div>
           </div>
@@ -96,7 +107,7 @@
 
     <section class="changing-size bg-dark text-white zero-margin">
       <div class="light-margin">
-        <p class="no-margin changing-font">Made with  ❤  in San Francisco.</p>
+        <p class="no-margin changing-font">Made with  ❤  in San Francisco, by Diane Bunod.</p>
       </div>
     </section>
 
