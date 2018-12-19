@@ -26,6 +26,7 @@ gem 'bcrypt', '~> 3.1.7'
 
 gem 'jquery-rails'
 
+gem 'active_storage-postgresql'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
